@@ -1,5 +1,10 @@
-grocerylist = ("melk", "kaas", "worst", "boter")
+grocerylist = ("melk", "kaas", "worst", "boter", "water")
 shoppingcart = ("melk", "kaas", "broccoli", "kipfilet")
-for x in grocerylist:
-    if x == "melk":
-        print("Continu shopping")
+
+a = set(grocerylist)
+b = set(shoppingcart)
+
+if a == b:
+    print("Done shopping")
+else:
+    print("Continu shopping")
